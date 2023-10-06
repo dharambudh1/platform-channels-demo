@@ -1,16 +1,14 @@
-# platform_channels_demo
+# Platform Channels Demo
 
-A new Flutter project.
+## Description:
+The following code demonstrates how to call a platform-specific API to retrieve and display the current battery level. It uses the Android `BatteryManager` API, the iOS `device.batteryLevel` API, the Windows `GetSystemPowerStatus` API, and the Linux `UPower` API with a single platform message, `getBatteryLevel()`.
 
-## Getting Started
+The example adds the platform-specific code inside the main app itself. If you want to reuse the platform-specific code for multiple apps, the project creation step is slightly different (see [developing packages](https://docs.flutter.dev/packages-and-plugins/developing-packages#plugin)), but the platform channel code is still written in the same way.
 
-This project is a starting point for a Flutter application.
+Important: The "`device.batteryLevel` API" feature is incompatible with iOS simulators; it requires a physical iOS device to perform such functionality. I don't have access to such a device, so I did not test this code on the iOS platform.
 
-A few resources to get you started if this is your first Flutter project:
+  - For more information, visit: https://docs.flutter.dev/platform-integration/platform-channels
+  - For detailed example, visit: https://docs.flutter.dev/platform-integration/platform-channels?tab=type-mappings-kotlin-tab#example
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Preview
+![alt text](https://i.postimg.cc/P5XJdRwk/imgonline-com-ua-twotoone-G2dm-Io4na-Kn-Hy.png "img")
